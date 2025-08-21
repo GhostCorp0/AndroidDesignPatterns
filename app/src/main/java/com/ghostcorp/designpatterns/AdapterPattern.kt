@@ -6,21 +6,23 @@ import androidx.recyclerview.widget.RecyclerView
 
 class HamburgerAdapter(private val hamburgers : List<Hamburger>) : RecyclerView.Adapter<HamburgerAdapter.HamburgerViewHolder>(){
 
+    // Adapter pattern is a structural design pattern that allows objects with incompatible interfaces
+    // to collaborate.It acts as a bridge between two classes that cannot work together due to incompatible
+    // interfaces without modifying their source code.
+
     inner class HamburgerViewHolder(view:View) : RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): HamburgerAdapter.HamburgerViewHolder {
-        TODO("Not yet implemented")
     }
 
     override fun onBindViewHolder(holder: HamburgerAdapter.HamburgerViewHolder, position: Int) {
-        TODO("Not yet implemented")
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return hamburgers.size
     }
 
 
